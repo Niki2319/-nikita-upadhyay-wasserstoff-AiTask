@@ -19,7 +19,7 @@ class ChatBot():
   embeddings = HuggingFaceEmbeddings()
 
   pinecone.init(
-      api_key= os.getenv('b1993bac-704f-4c14-b80a-9608905b81f3')
+      api_key= os.getenv('********-704f-4c14-b80a-9608905b81f3')
   )
 
   index_name = "langchain-demo"
@@ -32,7 +32,7 @@ class ChatBot():
 
   repo_id = "mistralai/Mixtral-8x7B-Instruct-v0.1"
   llm = HuggingFaceHub(
-      repo_id=repo_id, model_kwargs={"temperature": 0.8, "top_p": 0.8, "top_k": 50}, huggingfacehub_api_token=os.getenv('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')
+      repo_id=repo_id, model_kwargs={"temperature": 0.8, "top_p": 0.8, "top_k": 50}, huggingfacehub_api_token=os.getenv('*********AJzITRedxJBMBJrekFMjyMSUkuyx')
   )
 
   from langchain import PromptTemplate
